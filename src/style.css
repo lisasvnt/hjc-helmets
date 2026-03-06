@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme{
+  --font: "Barlow Condensed", ui-sans-serif, system-ui;
+
+  --brand-color-back: #FFFFFF;
+  --brand-color-font: #000000;
+  --brand-color-details: #A22217;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+body {
+  font-family: var(--font);
+}
+
+@utility btn-primary{
+@apply inline-flex relative w-fit border border-white px-6 py-2 text-sm font-bold text-white skew-x-[-12deg] hover:bg-white hover:text-black transition
+}
+
+@utility heading-1{
+@apply text-4xl md:text-8xl font-black text-(--brand-color-back) text-shadow-2xs
+}
+
+@utility wrapper{
+@apply flex flex-col gap-2
+}
