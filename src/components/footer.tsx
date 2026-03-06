@@ -20,7 +20,8 @@ function Footer() {
             BY PROVIDING YOUR E-MAIL, YOU AGREE TO RECEIVE THE HJC NEWSLETTER AND ACKNOWLEDGE THAT YOU HAVE READ OUR PRIVACY POLICY
           </p>
           <div className="flex">
-            <input type="email" placeholder="Email" className="flex-1 bg-transparent border border-white px-4 py-2 text-sm outline-none" />
+            <label htmlFor="newsletter" className="sr-only">Adresse email newsletter</label>
+            <input id="newsletter" type="email" placeholder="Email" className="flex-1 bg-transparent border border-white px-4 py-2 text-sm outline-none" />
             <button className="bg-gray-600 px-6 py-2 text-sm font-bold skew-x-[-12deg]">
               <span className="inline-block skew-x-[12deg]">Subscribe</span>
             </button>
